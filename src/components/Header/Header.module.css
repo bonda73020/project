@@ -1,0 +1,45 @@
+.Header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f3decc;
+    color:#3f3f3f;
+    padding: 3vh 1vw;
+    transition-duration: .5s;
+}
+.Header.dark{
+    background: #3f3f3f;
+    color: #f3decc;
+}
+
+a{
+    font-size: 18pt;
+    color: #3f3f3f;
+    padding: 1.5vh 1vw;
+    border-radius: 10px;
+    transition-duration: .5s;
+    margin: 0 .5vw;
+}
+a.dark{
+    color:#f3decc;
+}
+
+a#active{
+    background: rgba(63, 63, 63, 0.4);
+}
+
+a.dark#active{
+    background: rgba(243, 222, 204, 0.27);
+}
+
+a:hover{
+    color:#f3decc;
+    background: #3f3f3f;
+}
+
+a.dark:hover{
+    color:#3f3f3f;
+    background: #f3decc;
+}
+
+

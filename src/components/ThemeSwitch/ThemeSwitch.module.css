@@ -1,0 +1,74 @@
+.img{
+    height: 3vh;
+    position: relative;
+    margin: 0 .5vw;
+    z-index: 2;
+    padding: .5vh .3vw;
+    transition-duration: .5s;
+}
+.img#white{
+    filter: invert(100%);
+}
+
+.SwitchBody{
+    background: #f3decc;
+    border-radius: 10px;
+    position: relative;
+    cursor:pointer;
+    padding: .5vh .1vw;
+    transition-duration: .5s;
+    outline: #3f3f3f 2px solid;
+}
+.switcher{
+    position: absolute;
+    height: 4vh;
+    width: 5vh;
+    top: 50%;
+    transform: translateY(-53%);
+    right: .5vw;
+    border-radius: 10px;
+    z-index: 1;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+
+.ToLeft{
+    animation-name: slideLeft;
+}
+
+.ToRight{
+    animation-name: slideRight;
+}
+
+
+@keyframes slideRight {
+    0%{
+        right: .5vw;
+        background: #3f3f3f;
+        outline: #f3decc 2px solid;
+    }
+    100%{
+        right:3.5vw;
+        background: #f3decc;
+        outline: #3f3f3f 2px solid;
+    }
+}
+
+@keyframes slideLeft {
+    0%{
+        right:3.5vw;
+        background: #f3decc;
+    }
+    100%{
+        right: .5vw;
+        background: #3f3f3f;
+    }
+}
+
+
+
+.SwitchBody.dark{
+    background: #3f3f3f;
+    outline: #f3decc 2px solid;
+}
