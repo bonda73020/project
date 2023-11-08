@@ -1,0 +1,8 @@
+.MainLayout{
+    background: #f3decc;
+    padding: 3vh 0;
+    transition-duration: .5ms;
+}
+.MainLayout.dark{
+    background: #3f3f3f;
+}

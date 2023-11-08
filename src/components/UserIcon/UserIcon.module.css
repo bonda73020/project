@@ -3,5 +3,5 @@
     background: #f3decc;
     padding: 10px;
     border-radius: 50%;
-    outline: #3f3f3f 2px solid;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
 }

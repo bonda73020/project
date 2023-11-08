@@ -1,0 +1,3 @@
+const token = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZjQ3YzdhOTQ0ZWZmMzkwZmFjZGQzZjAwMzEzNjgwZCIsInN1YiI6IjY1NGExZmM3NTMyYWNiMDBlMTRhMTkxZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RslRGsGbkrlQ4SdzJ8MXAk2qYg67K5ZCHuoNAEdzXsk'
+
+export {token}

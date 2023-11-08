@@ -1,5 +1,7 @@
-import {createContext, FC, ReactNode, useState} from 'react';
+import {createContext, FC, ReactNode, useEffect, useState} from 'react';
 import {IContext} from "../interfaces/ContextInterface";
+import {IGenre} from "../interfaces/IGenre";
+import {movieService} from "../services/movieService";
 
 interface IProps {
     children:ReactNode
@@ -8,8 +10,15 @@ interface IProps {
 const Context = createContext<IContext>(null)
 const ContextProvider: FC<IProps> = ({children}) => {
     const [isDark,setIsDark] = useState<boolean>(false)
+    const [genres,setGenres] = useState<IGenre[]>([])
+
+    useEffect(() => {
+        movieService.getGenres().then(({data})=>setGenres(data))
+    }, []);
+
+
     return (
-        <Context.Provider value={{isDark,setIsDark}}>
+        <Context.Provider value={{isDark,setIsDark,genres}}>
             {children}
         </Context.Provider>
     );
