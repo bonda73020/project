@@ -4,7 +4,7 @@ import {IGenre} from "./IGenre";
 interface IContext{
     isDark:boolean;
     setIsDark:IState<boolean>;
-    genres?:IGenre[]
+    genres:IGenre[]
 }
 
 export type {IContext}

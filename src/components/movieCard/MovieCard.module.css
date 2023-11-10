@@ -5,6 +5,12 @@
     -webkit-background-clip: text;
     color: transparent
 }
+.RatingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .Movie{
     width: 16vw;
     display: flex;
@@ -16,7 +22,21 @@
     margin: 1vh 0;
     border-radius: 15px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transition-duration: .5s;
+    cursor: pointer;
 }
+
+
+.Movie:hover{
+    background: rgba(63, 63, 63, 0.3);
+    transform: translateY(-1vh);
+}
+
+.Movie.dark:hover{
+    background: rgba(243, 222, 204, 0.3)!important;
+}
+
+
 .Movie>div{
     margin: .5vh 0;
     text-align: center;

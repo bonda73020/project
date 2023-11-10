@@ -1,0 +1,8 @@
+.GenreLabel{
+    font-size: 18pt;
+    padding: 2vh 2vw;
+    background: #c77a7a;
+    color:snow;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}

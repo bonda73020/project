@@ -13,7 +13,7 @@ const ContextProvider: FC<IProps> = ({children}) => {
     const [genres,setGenres] = useState<IGenre[]>([])
 
     useEffect(() => {
-        movieService.getGenres().then(({data})=>setGenres(data))
+        movieService.getGenres().then(({data})=>setGenres(data.genres))
     }, []);
 
 

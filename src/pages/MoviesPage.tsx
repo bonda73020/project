@@ -12,7 +12,7 @@ const MoviesPage: FC<IProps> = () => {
 
     return (
         <div>
-            <Movies></Movies>
+            <Movies genres={[]}></Movies>
         </div>
     );
 };

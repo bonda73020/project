@@ -15,8 +15,11 @@ const MovieRating: FC<IProps> = ({vote_average}) => {
     }
 
     return (
-        <div style={styles} className={css.MovieRating}>
-            ★★★★★
+        <div className={css.RatingContainer}>
+            <div style={styles} className={css.MovieRating}>
+                ★★★★★
+            </div>
+            ({vote_average/2})
         </div>
     );
 };
