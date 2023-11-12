@@ -1,8 +1,7 @@
 import axios from "axios";
 
-import {moviesBaseURL, posterBaseURL, urls} from "../constants/urls";
+import {moviesBaseURL, posterBaseURL} from "../constants/urls";
 import {token} from "../constants/token";
-
 
 
 const headers = {
