@@ -1,7 +1,7 @@
 import {FC} from 'react';
-import {ICredits} from "../../interfaces/ICredits";
-import {ICastMember} from "../../types/ICastMember";
 import {NavLink} from "react-router-dom";
+
+import {ICastMember} from "../../types/ICastMember";
 import css from './MovieDetails.module.css'
 import {useAppContext} from "../../hooks/useAppContext";
 
@@ -11,7 +11,7 @@ interface IProps {
 
 
 const Cast: FC<IProps> = ({cast}) => {
-    const isDark = useAppContext().isDark
+    const {isDark} = useAppContext()
     return (
         <div className={css.Cast}>
             Cast:

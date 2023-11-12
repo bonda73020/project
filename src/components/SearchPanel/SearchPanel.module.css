@@ -1,0 +1,34 @@
+.SearchPanel{
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    margin: 2vh auto;
+    padding: 1vh 2vw;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    color:#3f3f3f;
+    align-items: center;
+    transition-duration: .5s;
+
+}
+
+.SearchPanel>input,.SearchPanel>button{
+    padding: 2vh 2vw;
+    width: 50%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 18pt;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    margin: 2vh 0;
+    transition-duration: .5s;
+    background: none;
+}
+
+.SearchPanel:not(.dark)>input,.SearchPanel:not(.dark)>button{
+    color:#3f3f3f;
+}
+
+.SearchPanel.dark>input,.SearchPanel.dark>button{
+    color:#f3decc;
+}

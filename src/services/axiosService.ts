@@ -1,6 +1,7 @@
+import axios from "axios";
+
 import {moviesBaseURL, posterBaseURL, urls} from "../constants/urls";
 import {token} from "../constants/token";
-import axios from "axios";
 
 
 

@@ -95,6 +95,10 @@ img.inactive{
 background: #3f3f3f;
     color: #f3decc;
 }
+.sorting_options>div.dark#Selected{
+    background: #f3decc;
+    color: #3f3f3f;
+}
 
 .sorting_options>div>img#Rotate{
     transform: rotate(180deg);

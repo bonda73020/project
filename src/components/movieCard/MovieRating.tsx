@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import img from '../../img/star.png'
+
 import css from './MovieCard.module.css'
 interface IProps {
     vote_average:number

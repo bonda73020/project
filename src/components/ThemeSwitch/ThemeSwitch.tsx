@@ -7,17 +7,17 @@ import {useAppContext} from "../../hooks/useAppContext";
 
 
 const ThemeSwitch = () => {
-    const value = useAppContext()
+    const {isDark,setIsDark} = useAppContext()
 
     const handleChange = ()=>{
-        value.setIsDark(prevState => !prevState)
+        setIsDark(prevState => !prevState)
     }
 
     return (
-        <div className={`${css.SwitchBody} ${value.isDark&&css.dark}`} onClick={handleChange}>
+        <div className={`${css.SwitchBody} ${isDark&&css.dark}`} onClick={handleChange}>
             <img className={css.img} src={moon} alt=""/>
             <img className={css.img} id={css.white} src={sun} alt=""/>
-            <div className={`${css.switcher} ${value.isDark?css.ToRight:css.ToLeft}`}></div>
+            <div className={`${css.switcher} ${isDark?css.ToRight:css.ToLeft}`}></div>
         </div>
     );
 };

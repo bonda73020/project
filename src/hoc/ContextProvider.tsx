@@ -1,4 +1,5 @@
 import {createContext, FC, ReactNode, useEffect, useState} from 'react';
+
 import {IContext} from "../interfaces/ContextInterface";
 import {IGenre} from "../interfaces/IGenre";
 import {movieService} from "../services/movieService";

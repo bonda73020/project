@@ -1,4 +1,5 @@
 import React, {FC, useEffect, useState} from 'react';
+
 import {IMovie} from "../../interfaces/IMovie";
 import css from './MovieDetails.module.css'
 import {posterBaseURL} from "../../constants/urls";
@@ -16,18 +17,16 @@ interface IProps {
 const MovieDetails: FC<IProps> = ({movie}) => {
 
 
-    const isDark = useAppContext().isDark
-    const genresInternal = useAppContext().genres
+    const {isDark} = useAppContext()
 
     const {title,id,original_title,poster_path,overview,genres,vote_average,vote_count} = movie
     const [credits,setCredits] = useState<ICredits>(null)
 
     useEffect(() => {
         movieService.getCreditsById(`${id}`).then(({data})=>setCredits(data))
-    }, []);
+    }, [id]);
 
 
-    console.log(genres)
     return (
         <div className={`${css.Container} ${isDark?css.dark:''}`}>
 
@@ -38,7 +37,7 @@ const MovieDetails: FC<IProps> = ({movie}) => {
                        <h4>{original_title}</h4>
                    </div>
 
-                   <img src={`${posterBaseURL}/${poster_path}`} alt=""/>
+                   {poster_path&&<img src={`${posterBaseURL}/${poster_path}`} alt=""/>}
                </div>
                <div className={css.RightTopPanel}>
 

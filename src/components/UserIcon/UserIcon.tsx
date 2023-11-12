@@ -1,4 +1,5 @@
 import React from 'react';
+
 import img from '../../img/user.png'
 import css from './UserIcon.module.css'
 const UserIcon = () => {

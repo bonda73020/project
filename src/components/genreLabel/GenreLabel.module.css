@@ -5,4 +5,9 @@
     color:snow;
     border-radius: 15px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transition-duration: .5s;
+}
+
+.GenreLabel:hover{
+    transform: translateY(-1vh);
 }
